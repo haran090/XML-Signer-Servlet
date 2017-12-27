@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="TRAI_XmlSigner">
+        <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+        <property name="context-root" value="TRAI_XmlSigner"/>
+        <property name="java-output-path" value="/TRAI_XmlSigner/build/classes"/>
+    </wb-module>
+</project-modules>
