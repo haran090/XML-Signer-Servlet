@@ -33,8 +33,9 @@ public class Login extends HttpServlet {
 		// TODO Auto-generated method stub
 		String password = request.getParameter("pass");
 		if(password != null) {
-			String encoded = Base64.getEncoder().encodeToString(password.getBytes());
-			if(encoded != null && encoded.equals("c2FpbGJvYXQzNA==")){
+			MessageDigest digest = MessageDigest.getInstance("SHA-1");
+			String encoded = new String(digest.digest(password.getBytes(StandardCharsets.UTF_8)));
+			if(encoded != null && encoded.equals("56863a9219d49127d3329baf2fa5b533b954faac")){
 				request.getRequestDispatcher("/file_upload.jsp").forward(request, response);
 			}
 			else {
